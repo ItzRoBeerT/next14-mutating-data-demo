@@ -31,6 +31,7 @@ export async function createPost(prevSate, formData) {
         userId: 1,
     });
 
+    revalidatePath('/', 'layout');
     redirect("/feed");
 }
 
