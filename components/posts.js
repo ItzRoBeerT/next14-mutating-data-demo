@@ -21,7 +21,7 @@ function Post({ post , action}) {
   return (
     <article className="post">
       <div className="post-image">
-        <Image loader={imageLoader} src={post.image} fill alt={post.title} quality={50} />
+        <Image loader={imageLoader} src={post.image} width={200} height={120} sizes='' alt={post.title} quality={50} />
       </div>
       <div className="post-content">
         <header>
